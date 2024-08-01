@@ -9,8 +9,8 @@ This Python script simulates a single tape Turing machine that performs the modu
 - **Configurable Input**: The machine can be configured with different inputs to perform the modulo operation on various pairs of integers.
 
 ## Files
-
-- `turing_machine_mod.py`: The main script containing the Turing machine simulation for the modulo operation.
+- `main.py`: main loop and runs TM
+- `TM.py`: The turning machine class.
 
 ## Usage
 
