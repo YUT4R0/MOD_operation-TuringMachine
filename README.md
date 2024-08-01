@@ -25,7 +25,7 @@ This Python script simulates a single tape Turing machine that performs the modu
 ## Example
 
 Consider the following example where we compute `a mod b = c`:
-- e 'a', 'b', and 'n' are integers represented by 'I' and 'mod' by '#';
+- The variables 'a', 'b', and 'n' are integers represented by 'I' enumeration and 'mod' by '#';
 - So if you wanna compute "5 mod 3", it must be typed like `IIIII#III`;
 - As a result, you would get 1, on the terminal, you get `IIIII#III=I` (Followed by a message that indicates if the operation is acceptable);
 
