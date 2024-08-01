@@ -1,6 +1,7 @@
 # Turing Machine Simulator for Modulo Operation
 
 This Python script simulates a single tape Turing machine that performs the modulo operation (remembering that a Turing machine is a mathematical model of computation that defines an abstract machine that manipulates symbols on a strip of tape according to a table of rules).
+- Disclaimer: it only works with positive integer numbers.
 
 ## Features
 
@@ -9,7 +10,7 @@ This Python script simulates a single tape Turing machine that performs the modu
 - **Configurable Input**: The machine can be configured with different inputs to perform the modulo operation on various pairs of integers.
 
 ## Files
-- `main.py`: main loop and runs TM
+- `main.py`: main loop and runs TM.
 - `TM.py`: The turning machine class.
 
 ## Usage
@@ -17,17 +18,16 @@ This Python script simulates a single tape Turing machine that performs the modu
 1. **Setup**: Ensure you have Python installed on your system.
 2. **Run the Script**: Execute the script using the command:
     ```sh
-    python turing_machine_mod.py
+    python main.py
     ```
 3. **Input**: Modify the input variables within the script to change the numbers for which you want to compute the modulo.
 
 ## Example
 
-Consider the following example where we compute `5 % 3`:
-
-- The script initializes the tape with the binary representation of the input numbers.
-- It then follows the transition rules defined in the Turing machine configuration to compute the result.
-- The output is the remainder of the division, which in this case is `2`.
+Consider the following example where we compute `a mod b = c`:
+- e 'a', 'b', and 'n' are integers represented by 'I' and 'mod' by '#';
+- So if you wanna compute "5 mod 3", it must be typed like `IIIII#III`;
+- As a result, you would get 1, on the terminal, you get `IIIII#III=I` (Followed by a message that indicates if the operation is acceptable);
 
 ## Code Overview
 
