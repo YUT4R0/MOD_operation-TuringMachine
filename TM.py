@@ -40,20 +40,22 @@ class TuringMachine:
             self.transition('R', self.q0)
         elif self.tape[self.ptr] == '#':
             self.transition('R', self.q1)
+        else:
+            print(f"{self.tape_cpy} REJECT")
 
     def q1(self) -> None:
         if self.ptr == len(self.tape) or self.tape[self.ptr] == 'Y':
             self.transition('L', self.q2)
         elif self.tape[self.ptr] == 'I':
             self.transition('R', self.q1)
-        elif self.tape[self.ptr] == '#':
+        else:
             print(f"{self.tape_cpy} REJECT")
 
     def q2(self) -> None:
         if self.tape[self.ptr] == 'I':
             self.tape = self.replace(self.ptr, 'Y')
             self.transition('L', self.q3)
-        elif self.tape[self.ptr] == '#':
+        else:
             print(f"{self.tape_cpy} REJECT")
 
     def q3(self) -> None:

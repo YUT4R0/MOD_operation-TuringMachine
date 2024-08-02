@@ -6,6 +6,9 @@ print("> where 'a', 'b' and 'n' are integers represented by 'I' and 'mod' by '#;
 print("> Type something for example: 'III#II';")
 print("> The result must be 'I';")
 
+print(len("IIIIIIIIIIIIIIIII"))
+print(len("IIIIIIIIIIIIIIIIIIIIIIIIIIIIIII "))
+
 running = True
 while running:
     TAPE = ""
@@ -15,7 +18,7 @@ while running:
     op = str(input("* Wanna play again (y/n)?: ")).upper()
     while op not in ('Y', 'N'):
         print(f"[!!!] Invalid operation: '{op}'.")
-        op = str(input("* Wanna play again (y/n)?: "))
+        op = str(input("* Wanna play again (y/n)?: ")).upper()
     if op == 'N':
         print("% Exiting program...")
         break
