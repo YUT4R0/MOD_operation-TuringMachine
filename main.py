@@ -6,9 +6,6 @@ print("> where 'a', 'b' and 'n' are integers represented by 'I' and 'mod' by '#;
 print("> Type something for example: 'III#II';")
 print("> The result must be 'I';")
 
-print(len("IIIIIIIIIIIIIIIII"))
-print(len("IIIIIIIIIIIIIIIIIIIIIIIIIIIIIII "))
-
 running = True
 while running:
     TAPE = ""
